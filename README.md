@@ -18,23 +18,23 @@ This project serves as a practical demonstration of a full data science pipeline
 
 ## Tech Stack
 
-  - **Programming Language: Python 3
-  - **Libraries:
-      - **Data Manipulation & Analysis:** Pandas, NumPy [2]
-      - **Machine Learning:** Scikit-learn [2]
-      - **Data Visualization (Python):** Matplotlib, Seaborn [2]
-  - **Business Intelligence:** Microsoft Power BI [18]
+  - **Programming Language**: Python 3
+  - **Libraries**:
+      - **Data Manipulation & Analysis:** Pandas, NumPy
+      - **Machine Learning:** Scikit-learn
+      - **Data Visualization (Python):** Matplotlib, Seaborn
+  - **Business Intelligence:** Microsoft Power BI
 
 ## Project Workflow
 
 The project follows a structured, multi-stage workflow:
 
-1.  **Data Sourcing and Cleaning:** The dataset (e.g., Bangalore House Price Data from Kaggle) is loaded. A rigorous cleaning process is applied to handle missing values, correct data types, and standardize unstructured text fields (like `total_sqft` and `size`). [4, 6]
-2.  **Exploratory Data Analysis (EDA):** Visualizations such as histograms, scatter plots, and correlation heatmaps are used to understand feature distributions and their relationships with the target variable (`price`). [7, 9]
-3.  **Feature Engineering:** New, more predictive features like `price_per_sqft` are created. Categorical variables are converted into a machine-readable format using one-hot encoding. [10, 12]
-4.  **Model Training and Optimization:** The data is split into training and testing sets. Features are scaled using `StandardScaler`. A baseline Linear Regression model is built, followed by a Ridge Regression model. `GridSearchCV` is used to find the optimal `alpha` hyperparameter for the Ridge model, ensuring it is robust and generalizes well. [13, 14, 22]
+1.  **Data Sourcing and Cleaning:** The dataset (e.g., Bangalore House Price Data from Kaggle) is loaded. A rigorous cleaning process is applied to handle missing values, correct data types, and standardize unstructured text fields (like `total_sqft` and `size`).
+2.  **Exploratory Data Analysis (EDA):** Visualizations such as histograms, scatter plots, and correlation heatmaps are used to understand feature distributions and their relationships with the target variable (`price`).
+3.  **Feature Engineering:** New, more predictive features like `price_per_sqft` are created. Categorical variables are converted into a machine-readable format using one-hot encoding.
+4.  **Model Training and Optimization:** The data is split into training and testing sets. Features are scaled using `StandardScaler`. A baseline Linear Regression model is built, followed by a Ridge Regression model. `GridSearchCV` is used to find the optimal `alpha` hyperparameter for the Ridge model, ensuring it is robust and generalizes well.
 5.  **Model & Data Export:** The final trained Ridge model and the feature scaler are saved as `.pkl` files. The test dataset is saved as a `.csv` file for use in Power BI.
-6.  **Power BI Integration & Visualization:** The test data CSV is loaded into Power BI. A Python script is executed within the Power Query Editor to load the saved model and scaler, make predictions, and append them as a new column. Finally, an interactive dashboard is designed to visualize the results and allow for dynamic data exploration. [19]
+6.  **Power BI Integration & Visualization:** The test data CSV is loaded into Power BI. A Python script is executed within the Power Query Editor to load the saved model and scaler, make predictions, and append them as a new column. Finally, an interactive dashboard is designed to visualize the results and allow for dynamic data exploration.
 
 ## Setup and Installation
 
@@ -91,7 +91,7 @@ Open and run the Jupyter Notebook (`.ipynb` file) included in this repository. T
       - Click on **Transform data** to open the Power Query Editor.
       - In the **APPLIED STEPS** pane, click the gear icon next to the **"Ran Python script"** step.
       - In the Python script editor window, **update the file paths** for `ridge_model.pkl` and `scaler.pkl` to match their location on your local machine.
-      - Click **OK, then Close & Apply.
+      - Click OK, then Close & Apply.
 Usage
 
 Once the setup is complete, you can interact with the Power BI dashboard:
