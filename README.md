@@ -2,7 +2,7 @@ This repository contains a complete, end-to-end data science project that predic
 
 ## Project Overview
 
-The real estate market is complex, with prices influenced by numerous factors. This project aims to demystify these dynamics by building a robust regression model to predict property prices accurately. The final output is not just a model, but a user-friendly and interactive Power BI dashboard that allows users to explore data, view predictions, and understand the key drivers of the housing market. [1, 2, 3]
+The real estate market is complex, with prices influenced by numerous factors. This project aims to demystify these dynamics by building a robust regression model to predict property prices accurately. The final output is not just a model, but a user-friendly and interactive Power BI dashboard that allows users to explore data, view predictions, and understand the key drivers of the housing market.
 
 This project serves as a practical demonstration of a full data science pipeline, integrating Python's analytical power with Power BI's visualization capabilities.
 
